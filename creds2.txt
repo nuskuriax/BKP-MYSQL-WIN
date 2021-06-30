@@ -1,3 +1,0 @@
-username = backupnw
-password = Rd^Z^vLe!FYnh3Z+dP=j
-domain   = 10.82.81.24
