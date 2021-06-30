@@ -1,6 +1,6 @@
 #!/bin/bash
-mysqldump --defaults-extra-file=/home/adminnw/creds osticket > osticket.sql 2> output.log
-smbclient //10.82.81.24/backuposticket/ -c "put osticket.sql" -A creds2
+mysqldump --defaults-extra-file=/home/USUARIO/credsmysql base > base.sql 2> output.log
+smbclient //ip/carpetacomaprtida/ -c "put base.sql" -A credswindows
 if [ -s output.log ];
 then
         python3 mailmalo
@@ -8,4 +8,4 @@ then
 else
         python3 mail
 fi
-rm osticket.sql
+rm base.sql
